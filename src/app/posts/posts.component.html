@@ -1,0 +1,31 @@
+<p>
+  posts works!
+</p>
+
+{{model | json}}
+
+    <form (ngSubmit)="onSubmit()" #PostForm="ngForm"  >
+     <div>
+      {{Liv.form.valid}}
+    </div>
+ <div>
+   
+      Nom:
+      
+          <input type="text" [(ngModel)]=model.titre name='name' required>
+          
+        </div>
+        <div>
+        
+      Author:
+          <input type="text" [(ngModel)]=model.author name='author' required>
+         
+        
+    
+        </div>
+     
+      <button type="submit" mat-button>Create</button>
+    
+    
+
+  </form>
